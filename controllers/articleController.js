@@ -26,11 +26,7 @@ class ArticleController {
 
         console.log("Result", articles);
         
-        const init = {
-            headers: { 'content-type': 'application/json' },
-        }
-        const body = JSON.stringify(articles)
-        return new Response(body, init)
+        return articles;
     }
 
     getlength(request){
@@ -40,11 +36,7 @@ class ArticleController {
 
         console.log("Result", length);
 
-        const init = {
-            headers: { 'content-type': 'application/json' },
-        }
-        const body = JSON.stringify(length)
-        return new Response(body, init)
+        return length;
     }
 }
 
