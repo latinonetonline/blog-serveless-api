@@ -10,12 +10,12 @@ class ArticleService {
 
         if (search && search.length > 0) {
 
-            records = articleSlugs.filter(value => value.includes(search.toLowerCase().replace(/ /g, '+')));
+            records = slugs.filter(value => value.includes(search.toLowerCase().replace(/ /g, '+')));
         }
         else {
-            records = articleSlugs;
+            records = slugs;
         }
-
+      
         totalRecords = records.length;
         totalPages = Math.ceil(totalRecords / recPerPage)
 
