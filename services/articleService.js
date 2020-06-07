@@ -8,7 +8,7 @@ class ArticleService {
             displayRecords = [],
             totalPages = 0;
 
-        if (search) {
+        if (search && search.length > 0) {
 
             records = articleSlugs.filter(value => value.includes(search.toLowerCase().replace(/ /g, '+')));
         }

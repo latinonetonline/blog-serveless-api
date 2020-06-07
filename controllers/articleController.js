@@ -7,14 +7,12 @@ class ArticleController {
 
     getArticles(request){
         const url = new URL(request.url);
-        let page = 0;
-        let recPerPage = 0;
+        let page = 1;
+        let recPerPage = this.service.getLength();
         let search;
-        if(url.searchParams.has("page")){
-            page = parseInt(url.searchParams.get("page"));
-        }
 
-        if(url.searchParams.has("recPerPage")){
+        if(url.searchParams.has("page") && url.searchParams.has("recPerPage")){
+            page = parseInt(url.searchParams.get("page"));
             recPerPage = parseInt(url.searchParams.get("recPerPage"));
         }
 
