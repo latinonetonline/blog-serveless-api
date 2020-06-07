@@ -19,8 +19,8 @@ class ArticleService {
         totalRecords = records.length;
         totalPages = Math.ceil(totalRecords / recPerPage)
 
-        displayRecordsIndex = Math.max(page - 1, 0) * recPerPage;
-        endRec = (displayRecordsIndex) + recPerPage;
+        const displayRecordsIndex = Math.max(page - 1, 0) * recPerPage;
+        const endRec = (displayRecordsIndex) + recPerPage;
         displayRecords = records.slice(displayRecordsIndex, endRec);
 
         return {
