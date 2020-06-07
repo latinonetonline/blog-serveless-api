@@ -6,6 +6,8 @@ class ArticleController {
     }
 
     getArticles(request){
+        console.log("Start getArticles");
+
         const url = new URL(request.url);
         let page = 1;
         let recPerPage = this.service.getLength().length;
@@ -22,6 +24,8 @@ class ArticleController {
         
         const articles = this.service.getArticles(page, recPerPage, search);
 
+        console.log("Result", articles);
+        
         const init = {
             headers: { 'content-type': 'application/json' },
         }
@@ -30,7 +34,11 @@ class ArticleController {
     }
 
     getlength(request){
+        console.log("Start getlength");
+
         const length = this.service.getLength();
+
+        console.log("Result", length);
 
         const init = {
             headers: { 'content-type': 'application/json' },
