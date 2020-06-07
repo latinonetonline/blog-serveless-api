@@ -10,10 +10,10 @@ class ArticleService {
 
         if (search && search.length > 0) {
 
-            records = slugs.filter(value => value.includes(search.toLowerCase().replace(/ /g, '+')));
+            records = articleSlugs.filter(value => value.includes(search.toLowerCase().replace(/ /g, '+')));
         }
         else {
-            records = slugs;
+            records = articleSlugs;
         }
       
         totalRecords = records.length;
