@@ -96,8 +96,8 @@ class Router {
 
     route(req) {
 
-        if (request.method === "OPTIONS") {
-            return handleOptions(request)
+        if (req.method === "OPTIONS") {
+            return handleOptions(req)
         }
 
         const route = this.resolve(req)
