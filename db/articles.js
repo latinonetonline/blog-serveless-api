@@ -1,4 +1,5 @@
 const articleSlugs = [
+    'azure-functions-en-la-vida-real',
     'desarrollo-multiplataforma-con-flutter-y-.net-core',
     'visual-studio-codespaces-edición-de-código-online',
     'xamarin-bindings-para-librerías-de-androidios',
