@@ -1,5 +1,5 @@
 const articleSlugs = [
-    'mejor-que-github-pages-azure-static-web-apps'.
+    'mejor-que-github-pages-azure-static-web-apps',
     'azure-functions-en-la-vida-real',
     'desarrollo-multiplataforma-con-flutter-y-.net-core',
     'visual-studio-codespaces-edición-de-código-online',
