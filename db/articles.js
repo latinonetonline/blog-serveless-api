@@ -1,4 +1,5 @@
 const articleSlugs = [
+    'improving-our-ui-skills-in-xamarin-forms',
     'mejor-que-github-pages-azure-static-web-apps',
     'azure-functions-en-la-vida-real',
     'desarrollo-multiplataforma-con-flutter-y-.net-core',
