@@ -1,4 +1,5 @@
 const articleSlugs = [
+    '.net-core-ef-core-sql-server-angular-azure',
     'improving-our-ui-skills-in-xamarin-forms',
     'mejor-que-github-pages-azure-static-web-apps',
     'azure-functions-en-la-vida-real',
