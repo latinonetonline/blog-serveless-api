@@ -14,6 +14,7 @@ async function handleRequest(request) {
     // Replace with the approriate paths and handlers
     r.get('.*/articles', request => controller.getArticles(request))
     r.get('.*/countArticles', request => controller.getlength(request))
+    r.get('.*/articles/getBySlug', request => controller.getBySlug(request))
 
     const resp = await r.route(request)
     return resp

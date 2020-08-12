@@ -38,6 +38,23 @@ class ArticleController {
 
         return length;
     }
+
+    getBySlug(request){
+        console.log("Start getBySlug");
+
+        let slug;
+
+        const url = new URL(request.url);
+        if(url.searchParams.has("slug")){
+            slug = url.searchParams.get("slug");
+        }
+
+        const article = this.service.getBySlug(decodeURIComponent(slug));
+
+        console.log("Result", article);
+
+        return article;
+    }
 }
 
 module.exports = ArticleController

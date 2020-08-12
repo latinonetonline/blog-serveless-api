@@ -15,7 +15,7 @@ class ArticleService {
         else {
             records = articleSlugs;
         }
-      
+
         totalRecords = records.length;
         totalPages = Math.ceil(totalRecords / recPerPage)
 
@@ -33,6 +33,12 @@ class ArticleService {
     getLength() {
         return {
             length: articleSlugs.length
+        }
+    }
+
+    getBySlug(slug) {
+        return {
+            length: articleSlugs[articleSlugs.findIndex(slug)]
         }
     }
 }
