@@ -38,7 +38,7 @@ class ArticleService {
 
     getBySlug(slug) {
         return {
-            length: articleSlugs[articleSlugs.findIndex(slug)]
+            length: articleSlugs[articleSlugs.indexOf(slug.toLowerCase())]
         }
     }
 }
