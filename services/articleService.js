@@ -37,8 +37,10 @@ class ArticleService {
     }
 
     getBySlug(slug) {
+        var result = articleSlugs[articleSlugs.indexOf(slug.toLowerCase())];
         return {
-            length: articleSlugs[articleSlugs.indexOf(slug.toLowerCase())]
+            exist: result ? true : false,
+            slug: result
         }
     }
 }
