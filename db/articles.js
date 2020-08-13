@@ -1,4 +1,5 @@
 const articleSlugs = [
+    'introducci%c3%b3n-a-blazor',
     'los-secretos-del-monitoreo-de-sql-server',
     '.net-core-ef-core-sql-server-angular-azure',
     'improving-our-ui-skills-in-xamarin-forms',
